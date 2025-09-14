@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/sized.dart';
-import 'package:my_portfolio/constants/skill_items.dart';
-import 'package:my_portfolio/utils/project_utils.dart';
 import 'package:my_portfolio/widgets/contacts_sections.dart';
-import 'package:my_portfolio/widgets/custome_textfield.dart';
 import 'package:my_portfolio/widgets/drawer_mobile.dart';
+import 'package:my_portfolio/widgets/footer.dart';
 import 'package:my_portfolio/widgets/header_dasktop.dart';
 import 'package:my_portfolio/widgets/header_mobile.dart';
 import 'package:my_portfolio/widgets/main_desktop.dart';
 import 'package:my_portfolio/widgets/main_mobile.dart';
-import 'package:my_portfolio/widgets/project_card.dart';
 import 'package:my_portfolio/widgets/projects_sections.dart';
 import 'package:my_portfolio/widgets/skills_desktop.dart';
 import 'package:my_portfolio/widgets/skills_mobile.dart';
@@ -96,7 +92,7 @@ class _HomePageState extends State<HomePage> {
               //CONTACT
               ContactsSections(),
               //FOOTER
-              Container(height: 500, width: double.maxFinite),
+              Footer(),
             ],
           ),
         );
