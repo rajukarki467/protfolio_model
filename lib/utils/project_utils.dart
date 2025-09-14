@@ -21,54 +21,52 @@ class ProjectUtils {
 List<ProjectUtils> hobbyProjectUtils = [
   ProjectUtils(
     image: 'assets/projects/1.png',
-    title: 'English Learning App',
+    title: 'Math Quiz Challenge',
     subtitle:
-        'This is a comprehensive English learning app for practicing and competing with each other.',
+        'A fun math quiz app to compete with friends and improve problem-solving skills.',
     androidLink:
-        'https://play.google.com/store/apps/details?id=com.shohatech.eduza',
+        'https://play.google.com/store/apps/details?id=com.random.mathquiz',
   ),
   ProjectUtils(
     image: 'assets/projects/02.png',
-    title: 'English Dictionary App',
+    title: 'Phrase Master',
     subtitle:
-        'This is a dictionary application for English learners to easily look up word definitions.',
+        'An app to learn and practice daily English phrases with examples.',
     androidLink:
-        'https://play.google.com/store/apps/details?id=com.shohatech.eduza_eng_dictionary',
-    iosLink:
-        "https://apps.apple.com/us/app/eduza-english-dictionary/id6443770339",
+        'https://play.google.com/store/apps/details?id=com.random.phrasemaster',
+    iosLink: "https://apps.apple.com/us/app/phrase-master/id1002003004",
   ),
   ProjectUtils(
-      image: 'assets/projects/03.png',
-      title: 'Pocket Dictionary',
-      subtitle:
-          'This is a word memorising app to save and play your own words as quizes',
-      androidLink:
-          'https://play.google.com/store/apps/details?id=com.shohruhak.eng_pocket_dictionary',
-      iosLink:
-          'https://apps.apple.com/tr/app/pocket-dictionary-1/id6447465115'),
+    image: 'assets/projects/03.png',
+    title: 'Flash Vocabulary',
+    subtitle: 'Save and memorize words with flashcards and mini-games.',
+    androidLink:
+        'https://play.google.com/store/apps/details?id=com.random.flashvocab',
+    iosLink: 'https://apps.apple.com/us/app/flash-vocabulary/id2003004005',
+  ),
   ProjectUtils(
     image: 'assets/projects/04.png',
-    title: 'Tasbeeh Counter',
+    title: 'Meditation Counter',
     subtitle:
-        'This is a simple dzikr counter app for muslims with persistent storage',
+        'Track meditation or mantra sessions with a simple counter and history.',
     androidLink:
-        'https://play.google.com/store/apps/details?id=com.shohatech.tasbeeh',
+        'https://play.google.com/store/apps/details?id=com.random.meditationcounter',
   ),
   ProjectUtils(
     image: 'assets/projects/05.png',
-    title: 'Todo App',
-    subtitle: 'This is a simple task management app with persistent storage',
+    title: 'Simple Planner',
+    subtitle: 'Organize your tasks with an easy-to-use planner app.',
     androidLink:
-        'https://play.google.com/store/apps/details?id=com.shohatech.todo',
-    iosLink: "https://apps.apple.com/us/app/eduza-todo/id6443970333",
+        'https://play.google.com/store/apps/details?id=com.random.simpleplanner',
+    iosLink: "https://apps.apple.com/us/app/simple-planner/id3004005006",
   ),
   ProjectUtils(
     image: 'assets/projects/06.png',
-    title: 'NotePad App',
-    subtitle: 'This is a note taking app for MacOS and Android',
+    title: 'Quick Notes',
+    subtitle: 'A fast and lightweight note-taking app for mobile and desktop.',
     androidLink:
-        'https://play.google.com/store/apps/details?id=com.shohatech.notepad',
-    iosLink: 'https://apps.apple.com/us/app/eduza-notepad/id6443973859',
+        'https://play.google.com/store/apps/details?id=com.random.quicknotes',
+    iosLink: 'https://apps.apple.com/us/app/quick-notes/id4005006007',
   ),
 ];
 
@@ -77,26 +75,25 @@ List<ProjectUtils> hobbyProjectUtils = [
 List<ProjectUtils> workProjectUtils = [
   ProjectUtils(
     image: 'assets/projects/w01.png',
-    title: 'English Brain Craft',
+    title: 'EduLearn Pro',
     subtitle:
-        'This is an English learning app for students to learn English through various methods.',
+        'An e-learning platform with interactive lessons and progress tracking for students.',
     androidLink:
-        'https://play.google.com/store/apps/details?id=kr.co.evolcano.donotstudy',
-    iosLink:
-        "https://apps.apple.com/kr/app/%EC%98%81%EC%96%B4%EB%A8%B8%EB%A6%AC-%EA%B3%B5%EC%9E%91%EC%86%8C/id1507102714",
+        'https://play.google.com/store/apps/details?id=com.work.edulearnpro',
+    iosLink: "https://apps.apple.com/us/app/edulearn-pro/id5006007008",
   ),
   ProjectUtils(
     image: 'assets/projects/w02.png',
-    title: 'Online Shop Web App',
+    title: 'AutoParts Store',
     subtitle:
-        'This is a responsive online shop web application for car engine oil.',
-    webLink: 'https://www.elo.best',
+        'A responsive e-commerce web app to order and manage automotive parts online.',
+    webLink: 'https://www.autoparts-store.io',
   ),
   ProjectUtils(
     image: 'assets/projects/w03.jpeg',
-    title: 'Advertisement Management System',
+    title: 'Digital Ads Manager',
     subtitle:
-        'This is an Advertisement Management System to buy, sell, and manage advertisement.',
-    webLink: 'https://www.externally.unavailable.project',
+        'A complete solution to manage, track, and optimize advertising campaigns online.',
+    webLink: 'https://www.digitaladsmanager.app',
   ),
 ];

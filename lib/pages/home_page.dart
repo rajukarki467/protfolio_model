@@ -3,11 +3,14 @@ import 'package:flutter/rendering.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/sized.dart';
 import 'package:my_portfolio/constants/skill_items.dart';
+import 'package:my_portfolio/utils/project_utils.dart';
 import 'package:my_portfolio/widgets/drawer_mobile.dart';
 import 'package:my_portfolio/widgets/header_dasktop.dart';
 import 'package:my_portfolio/widgets/header_mobile.dart';
 import 'package:my_portfolio/widgets/main_desktop.dart';
 import 'package:my_portfolio/widgets/main_mobile.dart';
+import 'package:my_portfolio/widgets/project_card.dart';
+import 'package:my_portfolio/widgets/projects_sections.dart';
 import 'package:my_portfolio/widgets/skills_desktop.dart';
 import 'package:my_portfolio/widgets/skills_mobile.dart';
 
@@ -84,14 +87,12 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
+              const SizedBox(height: 30),
               //PROJECTS
-              Container(height: 500, width: double.maxFinite),
+              ProjectsSections(),
+              const SizedBox(height: 30),
               //CONTACT
-              Container(
-                height: 500,
-                width: double.maxFinite,
-                color: Colors.blueGrey,
-              ),
+
               //FOOTER
               Container(height: 500, width: double.maxFinite),
             ],
