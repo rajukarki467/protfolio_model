@@ -5,6 +5,7 @@ import 'package:my_portfolio/constants/sized.dart';
 import 'package:my_portfolio/widgets/drawer_mobile.dart';
 import 'package:my_portfolio/widgets/header_dasktop.dart';
 import 'package:my_portfolio/widgets/header_mobile.dart';
+import 'package:my_portfolio/widgets/main_desktop.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -38,6 +39,7 @@ class _HomePageState extends State<HomePage> {
                     scaffoldKey.currentState?.openEndDrawer();
                   },
                 ),
+              MainDesktop(),
 
               //SKILL
               Container(
