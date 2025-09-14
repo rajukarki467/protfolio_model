@@ -4,6 +4,8 @@ import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/sized.dart';
 import 'package:my_portfolio/constants/skill_items.dart';
 import 'package:my_portfolio/utils/project_utils.dart';
+import 'package:my_portfolio/widgets/contacts_sections.dart';
+import 'package:my_portfolio/widgets/custome_textfield.dart';
 import 'package:my_portfolio/widgets/drawer_mobile.dart';
 import 'package:my_portfolio/widgets/header_dasktop.dart';
 import 'package:my_portfolio/widgets/header_mobile.dart';
@@ -90,9 +92,9 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(height: 30),
               //PROJECTS
               ProjectsSections(),
-              const SizedBox(height: 30),
+              const SizedBox(height: 50),
               //CONTACT
-
+              ContactsSections(),
               //FOOTER
               Container(height: 500, width: double.maxFinite),
             ],
