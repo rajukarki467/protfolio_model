@@ -74,8 +74,9 @@ class _HomePageState extends State<HomePage> {
                     ),
 
                     const SizedBox(height: 50),
+
                     //platform and skill - desktop
-                    SkillsDesktop(),
+                    // SkillsDesktop(),
 
                     //platform and skill - mobile
                   ],
