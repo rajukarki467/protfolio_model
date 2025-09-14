@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-class CUstomColor {
+class CustomColor {
   static const Color ScaffoldBg = Color(0xff252734);
   static const Color bgLight1 = Color(0xff333646);
   static const Color bgLight2 = Color(0xff424657);
