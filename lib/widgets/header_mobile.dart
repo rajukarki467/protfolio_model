@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/style/text_style.dart';
-import 'package:my_portfolio/widgets/site_logo.dart';
+import '../style/text_style.dart';
+import '../widgets/site_logo.dart';
 
 class HeaderMobile extends StatelessWidget {
   const HeaderMobile({super.key, this.onLogoTap, this.onMenuTap});

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:my_portfolio/constants/colors.dart';
-import 'package:my_portfolio/constants/sized.dart';
-import 'package:my_portfolio/constants/sns_link.dart';
-import 'package:my_portfolio/widgets/custome_textfield.dart';
+import '../constants/colors.dart';
+import '../constants/sized.dart';
+import '../constants/sns_link.dart';
+import '../widgets/custome_textfield.dart';
 import 'dart:js' as js;
 
 class ContactsSections extends StatelessWidget {
@@ -80,31 +80,31 @@ class ContactsSections extends StatelessWidget {
                 onTap: () {
                   js.context.callMethod('open', [SnsLinks.github]);
                 },
-                child: Image.asset("github.png", width: 28),
+                child: Image.asset("assets/github.png", width: 28),
               ),
               InkWell(
                 onTap: () {
                   js.context.callMethod('open', [SnsLinks.github]);
                 },
-                child: Image.asset("linkedin.png", width: 28),
+                child: Image.asset("assets/linkedin.png", width: 28),
               ),
               InkWell(
                 onTap: () {
                   js.context.callMethod('open', [SnsLinks.facebook]);
                 },
-                child: Image.asset("facebook.png", width: 28),
+                child: Image.asset("assets/facebook.png", width: 28),
               ),
               InkWell(
                 onTap: () {
                   js.context.callMethod('open', [SnsLinks.instagram]);
                 },
-                child: Image.asset("instagram.png", width: 28),
+                child: Image.asset("assets/instagram.png", width: 28),
               ),
               InkWell(
                 onTap: () {
                   js.context.callMethod('open', [SnsLinks.telegram]);
                 },
-                child: Image.asset("telegram.png", width: 28),
+                child: Image.asset("assets/telegram.png", width: 28),
               ),
             ],
           ),
