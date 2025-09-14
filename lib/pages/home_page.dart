@@ -9,6 +9,7 @@ import 'package:my_portfolio/widgets/header_mobile.dart';
 import 'package:my_portfolio/widgets/main_desktop.dart';
 import 'package:my_portfolio/widgets/main_mobile.dart';
 import 'package:my_portfolio/widgets/skills_desktop.dart';
+import 'package:my_portfolio/widgets/skills_mobile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -37,8 +38,10 @@ class _HomePageState extends State<HomePage> {
             children: [
               //MAIN
               if (constraints.maxWidth >= kMinDesktopWidth)
+                // MainDesktop(),
                 const HeaderDesktop()
               else
+                //for mobile
                 HeaderMobile(
                   onLogoTap: () {},
                   onMenuTap: () {
@@ -47,13 +50,11 @@ class _HomePageState extends State<HomePage> {
                 ),
 
               if (constraints.maxWidth >= kMinDesktopWidth)
+                // MainDesktop(),
                 const MainDesktop()
               else
+                //for mobile
                 const MainMobile(),
-
-              // MainDesktop(),
-
-              //for mobile
 
               //SKILL
               Container(
@@ -74,11 +75,12 @@ class _HomePageState extends State<HomePage> {
                     ),
 
                     const SizedBox(height: 50),
-
-                    //platform and skill - desktop
-                    // SkillsDesktop(),
-
-                    //platform and skill - mobile
+                    if (constraints.maxWidth >= kMedDesktopWidth)
+                      //platform and skill - desktop
+                      const SkillsDesktop()
+                    else
+                      //platform and skill - mobile
+                      const SkillsMobile(),
                   ],
                 ),
               ),
