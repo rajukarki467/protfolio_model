@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
-import 'package:my_portfolio/constants/nav_items.dart';
-import 'package:my_portfolio/style/text_style.dart';
-import 'package:my_portfolio/widgets/header_dasktop.dart';
+import 'package:my_portfolio/widgets/drawer_mobile.dart';
 import 'package:my_portfolio/widgets/header_mobile.dart';
-import 'package:my_portfolio/widgets/site_logo.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,16 +11,24 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: scaffoldKey,
+      endDrawer: const DrawerMobile(),
       backgroundColor: CustomColor.ScaffoldBg,
       body: ListView(
         scrollDirection: Axis.vertical,
         children: [
           //MAIN
           // HeaderDesktop(),
-          HeaderMobile(onLogoTap: () {}, onMenuTap: () {}),
+          HeaderMobile(
+            onLogoTap: () {},
+            onMenuTap: () {
+              scaffoldKey.currentState?.openEndDrawer();
+            },
+          ),
 
           //SKILL
           Container(
